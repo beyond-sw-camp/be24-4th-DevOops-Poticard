@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <img src="https://github.com/user-attachments/assets/14d5ec2e-0044-496e-b485-540e089ae4a4" width="100%" /> 
+  <img src="https://github.com/user-attachments/assets/a20ebab8-eb53-4c7f-9ef3-36533e00f3d2" width="100%"/>
   <h3 align="center">나만의 포트폴리오 조합으로 완성하는 단 한 장의 명함</h3>
   <p align="center">지원자와 채용 담당자를 가장 효율적으로 연결하는 디지털 명함 플랫폼 Poticard를 소개합니다.</p>
 </p>
@@ -62,7 +62,7 @@
 ---
 
 ## ⚙️ 시스템 아키텍처
-<img width="668" height="545" alt="시스템 아키텍처 drawio" src="https://github.com/user-attachments/assets/eeb9a8cd-cc44-42ed-aaaa-fc0835bd06f2" />
+<img width="1920" height="991" alt="Image" src="https://github.com/user-attachments/assets/1076de02-6b7c-4f8d-959a-52e630cbcc00" />
 
 ---
 
@@ -79,175 +79,15 @@ PotiCard 서비스는 사용자의 경력 및 업력을 분석하여 구직·이
 
 ## 🎥 시연
 
-###  **🧑‍🦱 개인 사용자 이용 시나리오**
+###  **🧑‍🦱 프론트엔드 시연 영상**
+https://github.com/beyond-sw-camp/be24-2nd-DevOops-PotiCard
 
-<br>
+###  **🧑‍🦱 백엔드 API 명세서**
+https://api.poticard.kro.kr/swagger-ui/index.html
 
-<details open>
 
-<summary> 개인 회원가입, 로그인 <br>
+## 🎥 무중단 배포 설명
 
-https://github.com/user-attachments/assets/f66770df-1e82-489f-8ad7-5d496c877d92
 
-</summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 명함 <br>
-
-https://github.com/user-attachments/assets/e44b6d44-f67e-49d9-9b57-ef873e970854
-
-</summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 포트폴리오 <br> 
-
-https://github.com/user-attachments/assets/4f5ffb1a-9449-45a6-9b02-855ad73cfd79
-
-</summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 텍스트 채팅 <br> 
-
-https://github.com/user-attachments/assets/877d55d2-dd00-4544-a5c6-094291e2fdd2
-
- </summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 영상통화 <br>
-
-https://github.com/user-attachments/assets/1244f32d-2c5f-409b-947a-5b17e40d5c28
-
-</summary> <br>
-
-</details>
-
-<br>
-
-
-### **🏢 기업 사용자 이용 시나리오**
-
-<br>
-
-<details open>
-
-<summary> 기업 전환 <br> 
-
-https://github.com/user-attachments/assets/61db1d63-b6db-4f84-be18-02f9764fd098
-
- </summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 기업 회원가입, 로그인 기능 <br> 
-
-https://github.com/user-attachments/assets/9265c8a8-c77e-4d1a-8d26-da3e634ce2d0
-
- </summary> <br>
-
-</details>
-
-<br>
-
-<details open>
-
-<summary> 기업 서비스 이용 <br>
-
-https://github.com/user-attachments/assets/8f9f89fa-09df-4e26-9e05-b2e52179a093
-
- </summary> <br>
-
-</details>
-
-<br>
-
----
-
-## 📑 핵심 도메인 및 서비스 명세
-### 📌 상세 내용은 우측의 "🔗" 아이콘을 클릭하여 Wiki에서 확인하실 수 있습니다.
-
-Poticard 프로젝트의 핵심 비즈니스 로직을 담당하는 주요 도메인 서비스입니다. 각 도메인은 독립적인 역할을 수행하며, 유기적으로 연결되어 통합된 플랫폼 경험을 제공합니다.
-
-### 👤 1. User (사용자 계정 및 인증) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/User-Management)
-> **플랫폼의 기반이 되는 사용자 관리 및 보안 도메인입니다.**
-
-* **권한 분리**: 일반 유저(`ROLE_USER`)와 기업 유저(`ROLE_COMPANY`)로 역할을 명확히 구분하여 맞춤형 서비스를 제공합니다.
-* **보안 및 인증**: JWT(JSON Web Token) 기반의 안전한 인증 시스템을 구축하였으며, Google 및 Kakao OAuth2 소셜 로그인과 이메일 인증 기반의 로컬 회원가입을 모두 지원합니다.
-* **프로필 관리**: 가입 시 DiceBear API를 활용한 기본 아바타가 제공되며, 사용자의 연락처, 소속, 경력 등의 세부 정보를 유연하게 관리할 수 있습니다.
-
-### 🪪 2. Namecard (디지털 명함) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Namecard)
-> **사용자의 핵심 아이덴티티와 기술 스택을 한눈에 보여주는 디지털 명함 서비스입니다.**
-
-* **1:1 맞춤형 명함**: 사용자당 1개의 고유한 명함을 보유하며, 개인의 개성을 살릴 수 있도록 테마, 색상, 레이아웃 커스터마이징을 지원합니다.
-* **핵심 정보 압축**: GitHub, 블로그 등의 대표 링크와 주로 사용하는 기술 스택 키워드를 직관적으로 배치하여 네트워킹의 효율성을 높입니다.
-
-### 📇 3. Portfolio (포트폴리오 작성 및 AI 첨삭) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Portfolio)
-> **사용자가 포트폴리오를 작성, 첨삭, 스타일 설정, 조회를 할 수 있습니다.**
-
-* **유연한 에디팅**: 여러 개의 포트폴리오를 목적에 맞게 생성할 수 있으며, `Section` 단위로 본문을 분할하고 순서를 자유롭게 재배치할 수 있습니다.
-* **자동 키워드 추출**: 작성된 본문을 AI가 분석하여 사용된 프레임워크나 데이터베이스 등의 핵심 기술 스택을 자동으로 추출하고 태깅합니다.
-* **✨ AI 스마트 어시스턴트 (PRO 전용)**:
-    * **AI 첨삭**: Google Gemini API를 연동하여 사용자가 작성한 문장을 더욱 전문적이고 매끄러운 실무 언어로 교정해 줍니다.
-
-### 🏢 4. Company (기업 채용 및 구인구직) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Community)
-> **기업과 인재를 연결해 주는 맞춤형 채용 파이프라인입니다.**
-
-* **상세 채용 공고**: 기업 유저는 기술 스택, 연봉, 원격 근무 여부 등 상세한 조건이 포함된 채용 공고를 등록할 수 있습니다.
-* **지원 및 트래킹**: 일반 유저는 탭 한 번으로 자신의 포티카드(명함/포트폴리오)를 첨부하여 지원할 수 있으며, 기업은 지원자 목록을 효율적으로 관리할 수 있습니다.
-* **스마트 추천**: 조회수와 즐겨찾기(스크랩) 데이터를 기반으로 유저에게 적합한 인기 채용 공고를 추천합니다.
-
-### 👪 5. Community (개발자 소통 채널) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Community)
-> **개발자 간의 지식 공유, 네트워킹, 문제 해결을 위한 커뮤니티 공간입니다.**
-
-* **카테고리 분류**: 일반적인 네트워킹 게시글뿐만 아니라, 질문 및 답변(Q&A) 기능을 지원합니다.
-* **문제 해결 트래킹**: Q&A 게시글의 경우 유효한 답변이 달리면 해결 완료 상태로 전환하여 정보의 품질을 높입니다.
-* **인기글 시스템**: 좋아요 수, 댓글 수, 조회수 등의 인터랙션 지표를 종합하여 실시간 랭킹 및 인기글을 제공합니다.
-
-### 💬 6. Chat (실시간 채팅 및 화상 통화) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Chat-and-Notification)
-> **유저 간, 혹은 지원자와 기업 간의 원활한 커뮤니케이션을 위한 실시간 통신 도메인입니다.**
-
-* **실시간 텍스트 채팅**: WebSocket과 STOMP 프로토콜을 활용하여 지연 없는 1:1 채팅을 구현했습니다.
-* **다양한 미디어 지원**: 텍스트뿐만 아니라 이미지, 문서 파일 등을 AWS S3와 연동하여 안전하게 첨부하고 공유할 수 있습니다.
-* **영상 채팅 (WebRTC)**: 텍스트를 넘어선 깊이 있는 소통과 온라인 면접 등을 위해 1:1 실시간 화상 채팅 기능을 지원합니다.
-* **스마트 알림**: 채팅방을 벗어나 있더라도 SSE(Server-Sent Events) 및 WebPush를 통해 즉각적인 알림을 수신할 수 있습니다.
-
-### 💳 7. Orders and Plans (결제 및 구독) [🔗](https://github.com/beyond-sw-camp/be24-4th-DevOops-Poticard/wiki/Orders-and-Plans)
-> **Poticard의 고급 기능을 잠금 해제하는 구독 결제 시스템입니다.**
-
-* **안전한 결제 연동**: PortOne(포트원) API를 통해 신뢰도 높은 결제 시스템을 구축하였으며, 서버와 클라이언트 간의 교차 검증으로 결제 위변조를 차단합니다.
-* **PRO 멤버십 혜택**: 결제 완료 시 즉시 AI 첨삭, 프리미엄 명함 테마 등 PRO 요금제 전용 기능에 대한 접근 권한이 부여됩니다.
----
-
-## 🚧 인프라 및 설정 (Infrastructure)
-
-* **AWS S3 연동**: `CloudUploadService`를 통해 프로필 이미지, 채팅 첨부파일, 포트폴리오 에디터 이미지 등을 년/월/일 폴더 구조로 업로드합니다.
-* **Exception Handling**: `@RestControllerAdvice`와 커스텀 `BaseException`을 활용하여 성공/실패 응답을 통일된 `BaseResponse` 포맷으로 클라이언트에 전달합니다.
-* **로깅 및 모니터링**: `application.yml`을 통해 Actuator 및 Prometheus 설정을 적용하였으며, OpenTelemetry(OTLP)를 통해 Jaeger로 분산 추적 데이터를 전송합니다.
-* **설정 파일 분리**: `application.yml`파일을 `application-dev.yml`과 `application-prod.yml`로 분리하여 각 환경에 맞게 적용합니다.
----
-
-
+## 🎥 무중단 배포 테스트 시연 영상 
 <p align="center">Copyright © 2026 DevOops Team. All rights reserved.</p>
