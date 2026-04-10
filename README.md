@@ -42,23 +42,27 @@
 ## 🔨️ 기술 스택
 
 ### 💻 Development
-| Layer | Technologies                                                                                                                                                                                                        |
-| :--- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Backend** | ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)                   |
+| Layer | Technologies |
+| :--- | :--- |
+| **Backend** | ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=spring-security&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=flat-square&logo=hibernate&logoColor=white) |
 | **Frontend** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white) |
-| **Database** | ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)                                                                                                              |
+| **Database** | ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white) ![Longhorn](https://img.shields.io/badge/Longhorn-FFB000?style=flat-square&logo=linux-foundation&logoColor=white) |
+| **External API** | ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=flat-square&logo=amazons3&logoColor=white) ![Portone](https://img.shields.io/badge/Portone-FF6000?style=flat-square&logo=webmoney&logoColor=white) ![OAuth2](https://img.shields.io/badge/OAuth2-EB5424?style=flat-square&logo=auth0&logoColor=white) |
 
 ### 🚀 Infrastructure & DevOps
-| Category | Technologies                                                                                                                                                                                                                                                                                                                                                                                             |
-| :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **DevOps** | ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)                                                                                                                                                                                                                                                                                                         |
-| **Monitoring** | ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Jaeger](https://img.shields.io/badge/Jaeger-60D0E4?style=flat-square&logo=jaegertracing&logoColor=white)                                                                        |
-| **Tools** |  ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black)                                                                                                |
+| Category | Technologies |
+| :--- | :--- |
+| **Orchestration** | ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Helm](https://img.shields.io/badge/Helm-0F1628?style=flat-square&logo=helm&logoColor=white) |
+| **CI/CD** | ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/Docker_Registry-2496ED?style=flat-square&logo=docker&logoColor=white) |
+| **Deployment** | ![Canary](https://img.shields.io/badge/Canary_Deployment-9cf?style=flat-square) ![BlueGreen](https://img.shields.io/badge/Blue--Green_Deployment-brightgreen?style=flat-square) |
+| **Gateway** | ![Nginx Ingress](https://img.shields.io/badge/Nginx_Ingress-009639?style=flat-square&logo=nginx&logoColor=white) |
+| **Monitoring** | ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Jaeger](https://img.shields.io/badge/Jaeger-60D0E4?style=flat-square&logo=jaegertracing&logoColor=white) |
+| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black) |
 
 ---
 
 ## ⚙️ 시스템 아키텍처
-<img width="1920" height="991" alt="Image" src="https://github.com/user-attachments/assets/0747a0f1-9993-4f7a-aad1-1704d14dd82b" />
+<img width="668" height="545" alt="시스템 아키텍처 drawio" src="https://github.com/user-attachments/assets/eeb9a8cd-cc44-42ed-aaaa-fc0835bd06f2" />
 
 ---
 
