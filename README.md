@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rounded&color=FFEB00&height=220&section=header&text=🗂️%20Poticard&fontSize=58&fontColor=000000&animation=twinkling&fontAlignY=40&desc=나만의%20커리어를%20한%20장의%20카드로&descAlignY=65&descSize=20" width="100%" />
+  <img src="https://github.com/user-attachments/assets/14d5ec2e-0044-496e-b485-540e089ae4a4" width="100%" /> 
   <h3 align="center">나만의 포트폴리오 조합으로 완성하는 단 한 장의 명함</h3>
   <p align="center">지원자와 채용 담당자를 가장 효율적으로 연결하는 디지털 명함 플랫폼 Poticard를 소개합니다.</p>
 </p>
