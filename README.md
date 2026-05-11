@@ -83,6 +83,7 @@ https://github.com/beyond-sw-camp/be24-2nd-DevOops-PotiCard
 ###  **🧑‍🦱 백엔드 API 명세서**
 https://api.poticard.kro.kr/swagger-ui/index.html
 
+---
 
 ## 🎥 무중단 배포 설명
 
@@ -97,6 +98,8 @@ Poticard는 **Kubernetes** 위에서 **Nginx Ingress**로 외부 트래픽을 �
 - Spring Boot·JPA·MariaDB·결제(Portone)·S3 등 데이터 일관성·트랜잭션·외부 연동이 핵심인 API는, 프론트처럼 “10%만 새 API”로 나누기보다 한 시점의 단일 활성 버전을 유지하는 편이 운영·디버깅에 유리한 경우가 많습니다.
 
 CI/CD(Jenkins·Kaniko·kubectl rollout 등)로 이미지를 갱신하고, 위 Kubernetes·Ingress 패턴으로 서비스 중단 없이 배포 흐름을 완성한 것이 Poticard의 무중단 배포 전략입니다.
+
+---
 
 ## 🎥 무중단 배포 테스트 시연 영상 
 
