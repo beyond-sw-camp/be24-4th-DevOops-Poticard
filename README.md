@@ -86,6 +86,32 @@ https://api.poticard.kro.kr/swagger-ui/index.html
 
 ## 🎥 무중단 배포 설명
 
+Poticard는 **Kubernetes** 위에서 **Nginx Ingress**로 외부 트래픽을 받고, **프론트엔드는 Canary**, **백엔드는 Blue-Green** 무중단 배포를 구성했습니다.
+
+### 프론트엔드: Canary 배포를 택한 이유
+- 트래픽을 점진적으로 올릴 수 있어, UI/브라우저 호환·번들·라우팅 문제를 소수 사용자에게 먼저 노출한 뒤 확대할 수 있습니다. 롤백도 가중치만 조정하면 되어 운영 부담이 상대적으로 작습니다.
+- 사용자 대면 화면은 배포 직후에도 시각·동작 이슈가 바로 드러나기 쉽고, API 스키마보다 체감 품질 검증이 중요한 편입니다. 그래서 “전부 한 번에 바꾸기”보다 소량 트래픽으로 검증하는 Canary가 프론트에 잘 맞습니다.
+
+### 백엔드: Blue-Green 배포를 택한 이유
+- 동시에 두 환경을 띄운 뒤, 트래픽을 한 번에 스위칭**할 수 있어 “이전 버전은 그대로 두고 신규만 준비 → 검증 후 전환”이 명확합니다. 문제 시 즉시 이전 색으로 되돌리는 롤백이 단순합니다.
+- Spring Boot·JPA·MariaDB·결제(Portone)·S3 등 데이터 일관성·트랜잭션·외부 연동이 핵심인 API는, 프론트처럼 “10%만 새 API”로 나누기보다 한 시점의 단일 활성 버전을 유지하는 편이 운영·디버깅에 유리한 경우가 많습니다.
+
+CI/CD(Jenkins·Kaniko·kubectl rollout 등)로 이미지를 갱신하고, 위 Kubernetes·Ingress 패턴으로 서비스 중단 없이 배포 흐름을 완성한 것이 Poticard의 무중단 배포 전략입니다.
 
 ## 🎥 무중단 배포 테스트 시연 영상 
+
+### Frontend 무중단 배포(Canary) 테스트 시연 영상
+
+https://github.com/user-attachments/assets/d589f620-37a7-4e3c-bf93-55dfdbb35282
+
+https://github.com/user-attachments/assets/5a599987-d011-431b-8baa-d7c7e64e0cca
+
+</br>
+
+### Backend 무중단 배포(Blue-Green) 테스트 시연 영상
+
+https://github.com/user-attachments/assets/b66191ad-df11-4e18-be89-79c16039508d
+
+https://github.com/user-attachments/assets/f4502edc-2fa9-41d6-944c-45826b376fae
+
 <p align="center">Copyright © 2026 DevOops Team. All rights reserved.</p>
